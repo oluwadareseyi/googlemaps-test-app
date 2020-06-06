@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.scss";
+import Map from "./components/Map";
 
 const App = () => {
   return (
     <div className="App">
-      <div />
+      <Map />
     </div>
   );
 };
