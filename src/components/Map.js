@@ -10,6 +10,7 @@ import { formatRelative } from "date-fns";
 import mapStyles from "./mapStyles";
 import "./Map.scss";
 import Search from "./Search";
+import Locate from "./Locate";
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -68,6 +69,7 @@ const Map = () => {
         </span>
       </h1>
       <Search panTo={panTo} />
+      <Locate panTo={panTo} />
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         zoom={8}
